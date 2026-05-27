@@ -1,0 +1,7 @@
+{
+  "name": "health-monitor-simulator",
+  "version": "2.0.0",
+  "type": "module",
+  "dependencies": { "mqtt": "^5.7.3" },
+  "scripts": { "start": "node esp32_sim.js" }
+}
