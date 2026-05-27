@@ -19,16 +19,24 @@
 
 ## Архитектура
 ESP32 (датчики)
+
 ↓ MQTT  health/data/{device_id}
+
 Mosquitto (брокер)
+
 ↓ subscribe
+
 Node.js (backend)
+
 ├── Валидация V(M_i(t))
 ├── Запись → InfluxDB
 ├── Алертизация A(t) + CDSS
 └── WebSocket push
+
 ↓
+
 React (frontend)
+
 ├── Графики реального времени
 ├── Журнал уведомлений с рекомендациями врача
 ├── История с агрегацией (Flux)
